@@ -1,12 +1,20 @@
-import { TextField } from '@mui/material'
+import { TextField, IconButton } from '@mui/material'
+import SearchIcon from '@mui/icons-material/Search'
+import './Searcher.css'
 
 const Searcher = () => {
   return (
-    <TextField
-      id='outlined-basic'
-      label='Search for your fav Pokemon'
-      variant='outlined'
-    />
+    <div className='searchBar'>
+      <TextField
+        id='outlined-basic'
+        label='Search'
+        sx={{ width: 600 }}
+        variant='outlined'
+      />
+      <IconButton aria-label='search'>
+        <SearchIcon />
+      </IconButton>
+    </div>
   )
 }
 
